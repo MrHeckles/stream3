@@ -10,6 +10,7 @@ app = Flask(__name__)
 BASE_FOLDER = os.path.dirname(os.path.abspath(__file__))
 RESOURCE_DIR = os.path.join(BASE_FOLDER, "resources")
 
+#defining hello_world function
 @app.route('/')
 def hello_world():
     with open(os.path.join(RESOURCE_DIR, "response.json")) as f:
