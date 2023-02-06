@@ -6,6 +6,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
+#setting working directory
 BASE_FOLDER = os.path.dirname(os.path.abspath(__file__))
 RESOURCE_DIR = os.path.join(BASE_FOLDER, "resources")
 
